@@ -1,0 +1,18 @@
+CREATE TABLE products(id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, description TEXT);
+INSERT INTO products VALUES(1, "Protein Shaker Bottle", 25, 500, "Convenient Cup for Making Protein Shakes");
+INSERT INTO products VALUES(2, "Lifting Wrist Strap", 15, 200, "Straps for the wrists which assist lifts");
+INSERT INTO products VALUES(3, "Lifting Waist Belt", 10, 50, "Belt to assist heavy lifts");
+INSERT INTO products VALUES(4, "Lifting Shoes", 50, 25, "Shoes for Lifting");
+INSERT INTO products VALUES(5, "Hand chalk", 5, 25, "Chalk to enhance grip strength on bar");
+INSERT INTO products VALUES(6, "Lifting Bar", 60, 15, "45lb bar for compound lifts");
+INSERT INTO products VALUES(7, "Dumbbell Set", 50, 7, "Adjustable dumbbell for strength training");
+INSERT INTO products VALUES(8, "Hoodie", 60, 5, "Hoodie for sweating");
+INSERT INTO products VALUES(9, "Protein Shaker Bottle Cleaning Brush", 5, 100, "Used to clean your shaker bottle!");
+INSERT INTO products VALUES(10, "Creatine monohyrdrate", 25, 15, "Performance enchancer for muscles");
+INSERT INTO products VALUES(11, "45lb Weight Plate", 69, 69, "Weight for strength training");
+INSERT INTO products VALUES(12, "Protein Powder", 30, 45, "Nutritional supplement to amplify protein intake");
+INSERT INTO products VALUES(13, "Water bottle", 10, 1000, "Bottle for holding water and/or preworkout" );
+INSERT INTO products VALUES(14, "Preworkout Powder", 30, 100, "Supplement to enhance energy during workout");
+INSERT INTO products VALUES(15, "Gym bag", 45, 15, "Bag to hold gym essentials");
+SELECT * FROM products ORDER BY price;
+SELECT name, MAX(price) FROM products;
